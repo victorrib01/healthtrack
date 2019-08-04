@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Login - Health Track</title>
+        <link href="plugins/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="container h-100">
+                <div class="d-flex justify-content-center">        
+                    <div class="user_card">
+                        <div class="logo_container">
+                            <img src="img/logo.png" class="brand_logo" alt="Logo">
+                            <span>HealthTrack</span>
+                        </div>
+                        <div class="d-flex justify-content-center form_container">
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="text" name="Username" class="form-control input_user" value="" placeholder="Username" required>
+                                </div>
+                                <div class="input-group mb-2">
+                                    <input type="password" name="Username" class="form-control input_pass" value="" placeholder="Password" required>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3 login_container">
+                                    <button class="btn btn-lg btn-primary btn-block login_btn"  onclick=window.location.href='views/dashboard.html'>Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-center links">
+                                Não possui conta? <a href="views/register.html" class="ml-2">Cadastrar-se</a>
+                            </div>
+                            <div class="d-flex justify-content-center links">
+                                <a href="views/forgot-password.html">Esqueceu sua senha?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="plugins/Bootstrap/js/bootstrap.min.js"></script>
+    </body>
