@@ -17,10 +17,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#cadastrarPeso").click(function(){  
-        $('#ajax-content').load("../ajax/peso/cadastrarPeso.html");
-        $("#cadastrarPeso").hide();
-        $("#vizualizarPeso").hide();
+    $("#cadastrarPressao").click(function(){  
+        $('#ajax-content').load("../ajax/pressaoArterial/cadastrarPressao.html");
+        $("#cadastrarPressao").hide();
+        $("#vizualizarPressao").hide();
    });
 });
-
