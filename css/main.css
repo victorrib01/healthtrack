@@ -67,7 +67,6 @@ main .main-content{
     background: linear-gradient(135deg, #56a0bb,#1e7c99);
 }
 .content{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
