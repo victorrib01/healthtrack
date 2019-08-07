@@ -27,4 +27,9 @@ $(document).ready(function(){
         $("#cadastrarAlimentacao").hide();
         $("#vizualizarAlimentacao").hide();
     });
+    $("#vizualizarPressao").click(function(){  
+        $('#ajax-content').load("../ajax/pressaoArterial/vizualizarPressao.html");
+        $("#cadastrarPressao").hide();
+        $("#vizualizarPressao").hide();
+    });
 });
