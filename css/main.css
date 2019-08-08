@@ -57,6 +57,9 @@ main .main-content{
     background: linear-gradient(135deg, #74daff,#2494b6);
     font-size: 30px;
     font-style: oblique;
+    -webkit-box-shadow: 10px 10px 25px 1px rgba(0,0,0,0.61);
+    -moz-box-shadow: 10px 10px 25px 1px rgba(0,0,0,0.61);
+    box-shadow: 10px 10px 25px 1px rgba(0,0,0,0.61);
 }
 .panel-row button{
     height: 125px;
@@ -73,6 +76,12 @@ main .main-content{
     justify-content: center;
     height: 50%;
     margin-top: 2%;
+}
+.main-content-title h2{
+ text-transform: uppercase;
+ text-shadow: 3px 6px 20px rgba(0,0,0,0.62);
+ font-size: 50px;
+ margin-bottom: -10%
 }
 @media screen and (min-width: 2242px) {
     .panel-row{
