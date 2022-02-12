@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gerenciamento de Pressão arterial - HealthTrack</title>
-    <link rel="stylesheet" href="../plugins/Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap:b" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap:b"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="flex-dashboard">
-        <sidebar>
-            <div class="sidebar-title">
-                <img src="../img/logo.png" alt="HealthTrackLogo">
-                <h2>HealthTrack</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li onclick=window.location.href='peso.html'>
-                        <a><i class="fas fa-weight-hanging"></i> Peso</a>
-                    </li>
-                    <li onclick=window.location.href='alimentacao.html'>
-                        <a><i class="fas fa-utensils"></i> Alimentação</a>
-                    </li>
-                    <li onclick=window.location.href='pressaoarterial.html'>
-                        <a><i class="fas fa-heartbeat"></i> Pressão arterial</a>
-                    </li>
-                    <li onclick=window.location.href='atividadefisica.html'>
-                        <a><i class="fas fa-hiking"></i> Atividade Física</a>
-                    </li>
-                    <li onclick=window.location.href='altura.html'>
-                        <a><i class="fas fa-ruler"></i> Altura</a>
-                    </li>
-                </ul>
-            </div>
-        </sidebar>
-        <main id="main">
-            <header>
-                <a href="dashboard.html"><i class="fas fa-home"></i>Home</a>
-                <a href="/index.html"><i class="fas fa-door-closed"></i>Sair</a>
-            </header>
-            <div class="main-content">
-                <div class="main-content-title">
-                    <h2>Gerenciamento de Pressão arterial</h2>
-                </div>
-                <div class="panel-row">
-                    <button class="panel panel-50" id="cadastrarPressao"><i class="far fa-edit"></i>Cadastrar
-                        Pressão arterial </button>
-                    <button class="panel panel-50" id="vizualizarPressao"><i class="far fa-list-alt"></i>Vizualizar
-                        Pressão arterial</button>
-                </div>
-                <div class="content" id="ajax-content">
-
-                </div>
-            </div>
-        </main>
+      <sidebar>
+        <div class="sidebar-title">
+          <img src="../img/logo.png" alt="HealthTrackLogo" />
+          <h2>HealthTrack</h2>
+        </div>
+        <nav>
+          <div class="menu">
+            <ul>
+              <li onclick="window.location.href='peso.html'">
+                <a><i class="fas fa-weight-hanging"></i> Peso</a>
+              </li>
+              <li onclick="window.location.href=alimentacao.html">
+                <a><i class="fas fa-utensils"></i> Alimentação</a>
+              </li>
+              <li onclick="window.location.href=pressaoarterial.html">
+                <a><i class="fas fa-heartbeat"></i> Pressão arterial</a>
+              </li>
+              <li
+                class="todo"
+                onclick="window.location.href=atividadefisica.html"
+              >
+                <a><i class="fas fa-hiking"></i> Atividade Física</a>
+              </li>
+              <li class="todo" onclick="window.location.href=altura.html">
+                <a><i class="fas fa-ruler"></i> Altura</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </sidebar>
+      <main id="main">
+        <header>
+          <a href="dashboard.html"><i class="fas fa-home"></i>Home</a>
+          <a href="/index.html"><i class="fas fa-door-closed"></i>Sair</a>
+        </header>
+        <div class="main-content">
+          <div class="main-content-title">
+            <h2>Gerenciamento de Pressão arterial</h2>
+          </div>
+          <div class="panel-row">
+            <button class="panel panel-50" id="cadastrarPressao">
+              <i class="far fa-edit"></i>Cadastrar Pressão arterial
+            </button>
+            <button class="panel panel-50" id="vizualizarPressao">
+              <i class="far fa-list-alt"></i>Vizualizar Pressão arterial
+            </button>
+          </div>
+          <div class="content" id="ajax-content"></div>
+        </div>
+      </main>
     </div>
     <script src="../plugins/jQuery/jquery-3.4.1.min.js"></script>
     <script src="../js/checkbox.js"></script>
@@ -68,6 +78,5 @@
     <script src="../plugins/jQueryValidation/dist/additional-methods.min.js"></script>
     <script src="../plugins/jQueryValidation/dist/localization/messages_pt_BR.min.js"></script>
     <script src="../js/ajax.js"></script>
-</body>
-
+  </body>
 </html>
